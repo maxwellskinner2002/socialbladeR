@@ -1,0 +1,12 @@
+Package: socialbladeR
+Title: A Package With a README, Vignette, and Pkgdown Site
+Version: 0.0.0.9000
+Authors@R: 
+    person("Maxwell", "Skinner", , "mskinn25@iastate.edu", role = c("aut", "cre"))
+Description: This package's purpose is to show how to have a README,
+    vignette, and a pkgdown website using litr.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.0
+LitrId: a0357915ad0b559c1e2b2c457652a1a0
