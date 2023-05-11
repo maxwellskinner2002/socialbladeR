@@ -2,7 +2,7 @@
 % Please edit documentation in create-socialbladeR.Rmd.
 \name{yt_topcategories}
 \alias{yt_topcategories}
-\title{Say hello to someone}
+\title{Get top accounts from specific categories on Youtube}
 \usage{
 yt_topcategories(keyword)
 }
