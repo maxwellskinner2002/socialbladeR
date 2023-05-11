@@ -1,10 +1,9 @@
 Package: socialbladeR
-Title: A Package With a README, Vignette, and Pkgdown Site
+Title: socialbladeR: A Package scraping the website Social Blade
 Version: 0.0.0.9000
 Authors@R: 
     person("Maxwell", "Skinner", , "mskinn25@iastate.edu", role = c("aut", "cre"))
-Description: This package's purpose is to show how to have a README,
-    vignette, and a pkgdown website using litr.
+Description: This package's purpose is to scrape the website social blade to get statistics from social media websites such as Youtube, Twitch.tv, and Facebook
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
