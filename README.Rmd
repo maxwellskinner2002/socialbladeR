@@ -21,30 +21,26 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of socialbladeR is to ...
+The goal of socialbladeR is to get 
 
 ## Installation
 
 You can install the development version of socialbladeR like so:
 
-``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+```{r}
+library(remotes)
+remotes::install_github("maxwellskinner2002/socialbladeR")
+library(socialbladeR)
 ```
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example which of using the function yt_topcategories, which will return a dataframe of the top 50 subscribed accounts by that specific category.
 
 ```{r example}
-#library(socialbladeR)
-## basic example code
+yt_topcategories("autos")
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
-
-```{r cars}
-summary(cars)
-```
 
 You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this. You could also use GitHub Actions to re-render `README.Rmd` every time you push. An example workflow can be found here: <https://github.com/r-lib/actions/tree/v1/examples>.
 
