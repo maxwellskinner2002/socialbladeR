@@ -2,7 +2,7 @@
 title: "socialbladeR: A Package Scraping the website Social Blade"
 author: "Maxwell Skinner"
 date: '2023-05-11'
-output: html_document
+output: github_document
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->

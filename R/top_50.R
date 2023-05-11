@@ -1,10 +1,20 @@
-
-
-
+#' Get top 50 followed accounts from either youtube, twitch.tv, facebook
+#' 
+#' @param platform Name of platform beings searched
+#' @export 
 top_50 <- function(platform) {
   
+  library(RSelenium)
+  library(wdman)
+  library(netstat)
+  library(httr)
+  library(rvest)
+  library(rlist)
+  library(tidyverse)
+  library(plyr)
+  
   #Check if input is valid
-  if (platform %in% c("youtube", "twitch.tv", "twitter", "facebook", "tiktok")) {
+  if (platform %in% c("youtube", "twitch.tv", "facebook")) {
     
     #Create the url variable based on the platform input
     if (platform == "youtube") {
@@ -13,16 +23,10 @@ top_50 <- function(platform) {
     else if (platform == "twitch.tv") {
       url = "https://socialblade.com/twitch/top/50"
     }
-    else if (platform == "twitter") {
-      url = "https://socialblade.com/twitter/top/50"
-    }
     else if (platform == "facebook") {
       url = "https://socialblade.com/facebook/top/50/likes"
     }
-    else if (platform == "tiktok") {
-      url = "https://socialblade.com/tiktok/top/50/most-followers"
-    }
-  
+    
     
     
     
@@ -112,16 +116,3 @@ top_50 <- function(platform) {
   }
   
 }
-
-
-#top_50("youtube") WORKS 
-
-#top_50("twitch.tv") WORKS
-
-#top_50("twitter") #error at column names (there are two empty columns with blanks)
-
-#top_50("instagram") displays table but with no numbers (only available for premium members)
-
-#top_50("facebook") WORKS
-
-#top_50("tiktok") error at subset (there is an empty column on site)
