@@ -36,7 +36,7 @@ You can install the development version of socialbladeR like so:
 This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
-library(socialbladeR)
+#library(socialbladeR)
 ## basic example code
 ```
 
